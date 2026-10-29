@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Willard Trapago – Frontend Developer</title>
+<meta name="description" content="Portfolio of Willard Trapago, an aspiring frontend developer.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav">
+  <a href="#home" class="logo" aria-label="Willard Trapago, home">WT</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu" class="menu" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hello">Hi, I'm Willard Trapago.</p>
+    <h1>Frontend<br>Developer</h1>
+    <p class="lead">I'm an aspiring developer who enjoys creating beautiful websites, exploring new technologies, and turning creative ideas into digital experiences. I'm continuously learning, improving my skills, and challenging myself to become a better developer.</p>
+    <div class="btns">
+      <a href="#projects" class="btn primary">Explore My Work</a>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </div>
+  <!-- Portrait: set PORTRAIT in script.js to replace the placeholder -->
+  <div class="portrait">
+    <div class="frame">
+      <div class="placeholder" id="portraitPlaceholder">Your portrait goes here</div>
+      <img id="portraitImg" alt="Portrait of Willard Trapago" hidden>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <h2 class="reveal">A Little About Me</h2>
+  <p class="reveal wide">I'm passionate about technology and enjoy exploring how websites and applications are created. I am still growing as a developer, and I believe that learning is an important part of the journey. I enjoy discovering new tools, practicing programming, improving my problem-solving skills, and experimenting with different ideas. Although backend development is still an area I am learning, I am eager to expand my knowledge and take on new challenges.</p>
+  <div class="cards three">
+    <div class="card reveal"><h3>Creative Problem Solver</h3></div>
+    <div class="card reveal"><h3>Lifelong Learner</h3></div>
+    <div class="card reveal"><h3>Aspiring Developer</h3></div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section">
+  <h2 class="reveal">Technologies I'm Exploring</h2>
+
+  <h3 class="group reveal">Web Development</h3>
+  <div class="cards four">
+    <div class="card tech reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" width="44" height="44"><h4>HTML5</h4><p>Structuring pages with semantic markup.</p></div>
+    <div class="card tech reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" width="44" height="44"><h4>CSS3</h4><p>Layouts, styling, and responsive design.</p></div>
+    <div class="card tech reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" width="44" height="44"><h4>JavaScript</h4><p>Adding interactivity to the browser.</p></div>
+  </div>
+
+  <h3 class="group reveal">Mobile Development</h3>
+  <div class="cards four">
+    <div class="card tech reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="" width="44" height="44"><h4>Flutter</h4><p>Exploring cross-platform app interfaces.</p></div>
+    <div class="card tech reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="" width="44" height="44"><h4>Dart</h4><p>The language behind Flutter apps.</p></div>
+  </div>
+
+  <h3 class="group reveal">Programming Languages</h3>
+  <div class="cards four">
+    <div class="card tech reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" width="44" height="44"><h4>C++</h4><p>Practicing programming fundamentals.</p></div>
+    <div class="card tech reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" width="44" height="44"><h4>Java</h4><p>Learning object-oriented programming.</p></div>
+  </div>
+
+  <h3 class="group reveal">Backend Learning</h3>
+  <div class="cards four">
+    <div class="card tech reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="" width="44" height="44"><h4>Laravel</h4><p>Just starting to learn backend development.</p></div>
+    <div class="card tech reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" width="44" height="44"><h4>PHP</h4><p>Learning server-side scripting basics.</p></div>
+  </div>
+
+  <h3 class="group reveal">Design</h3>
+  <div class="cards four">
+    <div class="card tech reveal"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="" width="44" height="44"><h4>Figma</h4><p>Exploring interface design and prototyping.</p></div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============
+  Replace each card's text and set data-github / data-demo to real URLs.
+  Empty links hide their button automatically. -->
+<section id="projects" class="section">
+  <h2 class="reveal">My Projects</h2>
+  <div class="cards two" id="projectGrid">
+
+    <article class="card project reveal" data-category="web" data-github="" data-demo="">
+      <div class="thumb"><img src="images/applifix.jpg" alt="APPLIFix homepage: Appliance Service Made Simple"></div>
+      <small>Project 01</small>
+      <h3>APPLIFix</h3>
+      <p>An appliance service website where customers can request a repair, track their request, and learn about the service.</p>
+      <ul class="tags"><li>Web</li></ul>
+      <div class="btns"><a class="btn sm gh">GitHub</a><a class="btn sm demo">Live Demo</a></div>
+    </article>
+
+    <article class="card project reveal" data-category="web" data-github="" data-demo="">
+      <div class="thumb">Project image</div>
+      <small>Project 02</small>
+      <h3>This Portfolio Website</h3>
+      <p>A personal website designed to introduce myself, showcase my skills, and present my learning journey as a developer.</p>
+      <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <div class="btns"><a class="btn sm gh">GitHub</a><a class="btn sm demo">Live Demo</a></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES ============
+  For each card: set data-img to the image path (e.g. "images/cert1.jpg"),
+  then replace the title, organization, and date text. -->
+<section id="certificates" class="section">
+  <h2 class="reveal">Certificates &amp; Achievements</h2>
+  <div class="cards three">
+    <article class="card cert reveal" data-img="images/cert-css-essentials.jpg">
+      <div class="thumb">Certificate image</div>
+      <h3>CSS Essentials</h3>
+      <p>Cisco Networking Academy (JS Institute)</p><p class="date">06 Oct 2026</p>
+      <button class="btn sm view">View Certificate</button>
+    </article>
+    <article class="card cert reveal" data-img="images/cert-html-essentials.jpg">
+      <div class="thumb">Certificate image</div>
+      <h3>HTML Essentials</h3>
+      <p>Cisco Networking Academy (JS Institute)</p><p class="date">05 Oct 2026</p>
+      <button class="btn sm view">View Certificate</button>
+    </article>
+    <article class="card cert reveal" data-img="images/cert-cyber-threat-management.jpg">
+      <div class="thumb">Certificate image</div>
+      <h3>Cyber Threat Management</h3>
+      <p>DICT-ITU DTC Initiative, Cisco Networking Academy</p><p class="date">14 May 2026</p>
+      <button class="btn sm view">View Certificate</button>
+    </article>
+    <article class="card cert reveal" data-img="images/cert-network-defense.jpg">
+      <div class="thumb">Certificate image</div>
+      <h3>Network Defense</h3>
+      <p>DICT-ITU DTC Initiative, Cisco Networking Academy</p><p class="date">14 May 2026</p>
+      <button class="btn sm view">View Certificate</button>
+    </article>
+    <article class="card cert reveal" data-img="images/cert-endpoint-security.jpg">
+      <div class="thumb">Certificate image</div>
+      <h3>Endpoint Security</h3>
+      <p>DICT-ITU DTC Initiative, Cisco Networking Academy</p><p class="date">13 May 2026</p>
+      <button class="btn sm view">View Certificate</button>
+    </article>
+    <article class="card cert reveal" data-img="images/cert-networking-devices.jpg">
+      <div class="thumb">Certificate image</div>
+      <h3>Networking Devices and Initial Configuration</h3>
+      <p>DICT-ITU DTC Initiative, Cisco Networking Academy</p><p class="date">13 May 2026</p>
+      <button class="btn sm view">View Certificate</button>
+    </article>
+    <article class="card cert reveal" data-img="images/cert-intro-cybersecurity.jpg">
+      <div class="thumb">Certificate image</div>
+      <h3>Introduction to Cybersecurity</h3>
+      <p>DICT-ITU DTC Initiative, Cisco Networking Academy</p><p class="date">12 Apr 2026</p>
+      <button class="btn sm view">View Certificate</button>
+    </article>
+  </div>
+</section>
+
+<!-- ============ LEARNING JOURNEY ============ -->
+<section id="journey" class="section">
+  <h2 class="reveal">Always Learning, Always Growing</h2>
+  <p class="reveal wide">I believe that becoming a good developer takes curiosity, patience, and consistent practice. I am continuously exploring new programming languages, improving my web development skills, and learning how different technologies work together. I may not know everything yet, but I am motivated to keep learning, build useful projects, and grow one step at a time.</p>
+  <ol class="steps">
+    <li class="reveal">Learning new technologies</li>
+    <li class="reveal">Practicing through personal projects</li>
+    <li class="reveal">Improving my coding and problem-solving skills</li>
+  </ol>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section">
+  <h2 class="reveal">Let's Connect</h2>
+  <p class="reveal wide">Have an idea, a project, or an opportunity to collaborate? I'd love to connect, learn, and exchange ideas with others who share an interest in technology.</p>
+  <div class="contact-grid">
+    <form id="contactForm" class="reveal" novalidate>
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" autocomplete="name" required>
+      <span class="error" data-for="name"></span>
+      <label for="email">Email Address</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <span class="error" data-for="email"></span>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <span class="error" data-for="message"></span>
+      <button type="submit" class="btn primary">Send Message</button>
+      <p id="formStatus" role="status"></p>
+    </form>
+    <!-- Set the real links in script.js (LINKS) -->
+    <ul class="links reveal">
+      <li><a data-social="github">GitHub</a></li>
+      <li><a data-social="facebook">Facebook</a></li>
+      <li><a data-social="linkedin">LinkedIn</a></li>
+      <li><a data-social="email">Email</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<!-- ============ MODAL ============ -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Certificate preview" hidden>
+  <button class="close" aria-label="Close preview">&times;</button>
+  <img id="modalImg" alt="Certificate preview">
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <p>© 2026 Willard Trapago. Built with curiosity and a passion for learning.</p>
+  <div class="social">
+    <a data-social="github" aria-label="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" width="22" height="22"></a>
+    <a data-social="facebook" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="" width="22" height="22"></a>
+    <a data-social="linkedin" aria-label="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="" width="22" height="22"></a>
+    <a data-social="email" aria-label="Email" class="mail">@</a>
+  </div>
+  <button id="toTop" class="btn sm">Back to Top</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
